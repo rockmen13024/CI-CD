@@ -1,0 +1,14 @@
+name: CI/CD 
+
+on:
+  push:
+    braches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Say Hi
+        uses: echo "Hello"
